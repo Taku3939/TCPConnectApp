@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPConnectApp", "TCPConnectApp\TCPConnectApp.csproj", "{706E767A-E3B9-4F80-A9F1-4A45C575082B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{706E767A-E3B9-4F80-A9F1-4A45C575082B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706E767A-E3B9-4F80-A9F1-4A45C575082B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706E767A-E3B9-4F80-A9F1-4A45C575082B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706E767A-E3B9-4F80-A9F1-4A45C575082B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {413E3F5B-6F29-4398-B3E4-43D1F7FF4ACE}
+	EndGlobalSection
+EndGlobal

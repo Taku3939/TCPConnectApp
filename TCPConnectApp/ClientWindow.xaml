@@ -1,0 +1,15 @@
+﻿<Window x:Class="TCPConnectApp.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TCPConnectApp"
+        mc:Ignorable="d"
+        Title="ClientWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="419" Margin="479,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="313" TextChanged="TextBox"/>
+        <Button x:Name="button" Content="Send&#xD;&#xA;" HorizontalAlignment="Left" Margin="280,318,0,0" VerticalAlignment="Top" Width="136" Height="63" Click="SendButton_Click"/>
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="59,332,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button1_Click"/>
+
+    </Grid>
+</Window>

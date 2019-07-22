@@ -1,0 +1,17 @@
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp.csprojAssemblyReference.cache
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\MainWindow.g.cs
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\App.g.cs
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp_MarkupCompile.cache
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp_MarkupCompile.lref
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\bin\Debug\TCPConnectApp.exe.config
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\bin\Debug\TCPConnectApp.exe
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\bin\Debug\TCPConnectApp.pdb
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\ClientWindow.g.cs
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\MainWindow.baml
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\ClientWindow.baml
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp.g.resources
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp.Properties.Resources.resources
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp.csproj.GenerateResource.cache
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp.csproj.CoreCompileInputs.cache
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp.exe
+E:\document\ProjectMIKUEC\TCPConnectApp\TCPConnectApp\obj\Debug\TCPConnectApp.pdb
