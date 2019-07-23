@@ -19,7 +19,7 @@ namespace TCPConnectApp
     /// </summary>
     public partial class ClientWindow : Window
     {
-        private Client a;
+        private Client client;
         public ClientWindow()
         {
             InitializeComponent();
@@ -28,9 +28,10 @@ namespace TCPConnectApp
 
         private void SendButton_Click(object sender, RoutedEventArgs e)
         {
-            a = new Client();
+            client = new Client();
             var text = textbox.Text;
-            a.Send("text");
+            Console.WriteLine(text);
+            client.Send(text);
         }
 
         private void TextBox(object sender, TextChangedEventArgs e)

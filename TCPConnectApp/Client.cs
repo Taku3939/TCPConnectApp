@@ -28,8 +28,8 @@ namespace TCPConnectApp
                 return;
             }
             var stream = _client.GetStream();
-            stream.ReadTimeout = 15000;
-            stream.WriteTimeout = 15000;
+          //  stream.ReadTimeout = 15000;
+          //  stream.WriteTimeout = 15000;
             var byteMessage = Encoding.UTF8.GetBytes(message);
             stream.WriteAsync(byteMessage, 0, byteMessage.Length).ContinueWith(task =>
             {

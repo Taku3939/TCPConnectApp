@@ -7,9 +7,8 @@
         mc:Ignorable="d"
         Title="ClientWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="419" Margin="479,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="313" TextChanged="TextBox"/>
-        <Button x:Name="button" Content="Send&#xD;&#xA;" HorizontalAlignment="Left" Margin="280,318,0,0" VerticalAlignment="Top" Width="136" Height="63" Click="SendButton_Click"/>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="59,332,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button1_Click"/>
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="419" Margin="479,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313" TextChanged="TextBox"/>
+        <Button x:Name="button" Content="Send&#xD;&#xA;" HorizontalAlignment="Left" Margin="113,318,0,0" VerticalAlignment="Top" Width="303" Height="63" Click="SendButton_Click"/>
 
     </Grid>
 </Window>
