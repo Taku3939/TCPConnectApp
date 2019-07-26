@@ -46,23 +46,30 @@ namespace TCPConnectApp
                 }, TaskScheduler.FromCurrentSynchronizationContext());
                 return;
             }
+
             var bytes = new Byte[256];
             foreach (var client in _client)
             {
                 var stream = client.GetStream();
                 stream.ReadAsync(bytes, 0, bytes.Length).ContinueWith(task =>
+                {
+
+                    string message = Encoding.UTF8.GetString(bytes, 0, task.Result);
+                    Console.WriteLine($"Reveive : {message} (Server)");
+                  
+                    OnReceiveEvent?.Invoke(message, client);
+                    if (message.Length == 0)
                     {
-                        string message = Encoding.UTF8.GetString(bytes, 0, task.Result);
-                        Console.WriteLine($"Reveive : {message} (Server)");
-                        //_onReceiveEvent?.Invoke(message);
-                       OnReceiveEvent?.Invoke(message, client);
-                        if (message.Length == 0)
-                        {
-                            Console.WriteLine($@"Passive Closing : {client.Client.RemoteEndPoint}");
-                            client.Close();
-                        }
-                    }, TaskScheduler.FromCurrentSynchronizationContext());
+                        Console.WriteLine($@"Passive Closing : {client.Client.RemoteEndPoint}");
+                        client.Close();
+                    }
+
+                    //SocketException error = new SocketException();
+                    //Console.WriteLine(error);
+
+                }, TaskScheduler.FromCurrentSynchronizationContext());
             }
         }
+
     }
 }

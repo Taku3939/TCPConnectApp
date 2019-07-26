@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="419" Margin="451,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="341" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="33" Margin="76,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" TextChanged="TextBox1_TextChanged"/>
-        <Button x:Name="button2" Content="client inatance" HorizontalAlignment="Left" Margin="111,321,0,0" VerticalAlignment="Top" Width="196" Height="62" Click="Button2_Click"/>
-        <Label x:Name="label" Content="IPAdress" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.211,0.154" Width="61"/>
-        <Label x:Name="label1" Content="port" HorizontalAlignment="Left" Margin="30,84,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="35" Margin="76,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" TextChanged="TextBox2_TextChanged"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="227*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="419" Margin="340,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="341" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+        <Button x:Name="button2" Content="client inatance" HorizontalAlignment="Left" VerticalAlignment="Top" Width="218" Height="33" Click="Button2_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Serch" HorizontalAlignment="Left" Margin="107,0,0,0" VerticalAlignment="Top" Width="233" Height="33" Click="Button_Click_1" Grid.Column="1"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="275" Width="446" Margin="0,41,0,0" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="283" Margin="0,33,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="451" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

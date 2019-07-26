@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Net.Sockets;
+using System.Net;
 
 namespace TCPConnectApp
 {
@@ -23,15 +25,19 @@ namespace TCPConnectApp
         public ClientWindow()
         {
             InitializeComponent();
-          
-        }
+            client = new Client();
+            
+            //  client.OnConnectEvent += client => { textbox.Text += $"Connected to [] (TCP)\n"; };
+
+            if (!client.Connected) { client.Connect("localhost", 30000);
+            } }
 
         private void SendButton_Click(object sender, RoutedEventArgs e)
         {
-            client = new Client();
             var text = textbox.Text;
             Console.WriteLine(text);
             client.Send(text);
+            textbox.Text = "";
         }
 
         private void TextBox(object sender, TextChangedEventArgs e)
@@ -40,6 +46,11 @@ namespace TCPConnectApp
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

@@ -38,12 +38,8 @@ namespace TCPConnectApp
                 textBox.Text += $"Connected to [{client.Client.RemoteEndPoint}] (TCP)\n";
                 _tcpServer.Receive();
             };
-            //_tcpServer._onReceiveEvent += (mes) =>
-            //{
-            //    textBox.Text += $"message:[{mes}]";
-            //};
             textBox.Text += "Start TCP Receive...\n";
-            //_tcpServer.Receive();
+            _tcpServer.Receive();
            
             }
 
@@ -76,6 +72,16 @@ namespace TCPConnectApp
         {
             var ClientWindow = new ClientWindow();
             ClientWindow.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+     
+        }
+
+        private void TextBox1_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

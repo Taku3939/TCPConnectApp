@@ -7,8 +7,22 @@
         mc:Ignorable="d"
         Title="ClientWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="419" Margin="479,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313" TextChanged="TextBox"/>
-        <Button x:Name="button" Content="Send&#xD;&#xA;" HorizontalAlignment="Left" Margin="113,318,0,0" VerticalAlignment="Top" Width="303" Height="63" Click="SendButton_Click"/>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
+            <TabItem Header="Server">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Client">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="55*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="193,349,0,0" VerticalAlignment="Top" Width="96" Height="32" Click="SendButton_Click" Grid.Column="1"/>
+                    <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="33" Margin="12,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" TextChanged="TextBox" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="391" Margin="308,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>
