@@ -17,22 +17,22 @@ namespace TCPConnectApp
        {
             _client = new TcpClient();
         }
-        public void Connect(string ip ,int port)
+        //public void Connect(string ip ,int port)
+        //{
+        //    _client.ConnectAsync(ip, port);
+        //  //  OnConnectEvent?.Invoke(_client);
+        //}
+        public void Send(string ip, int port ,string message)
         {
-            _client.ConnectAsync(ip, port);
-          //  OnConnectEvent?.Invoke(_client);
-        }
-        public void Send(string message)
-        {
-            //try
-            //{
-            //    _client = new TcpClient("localhost", 30000); 
-            //}
-            //catch
-            //{
-            //    Console.WriteLine("Error");
-            //    return;
-            //}
+            try
+            {
+                _client = new TcpClient(ip, port);
+            }
+            catch
+            {
+                Console.WriteLine("Error");
+                return;
+            }
             var stream = _client.GetStream();
           // stream.ReadTimeout = 15000;
           //stream.WriteTimeout = 15000;

@@ -21,31 +21,16 @@ namespace TCPConnectApp
     public partial class MainWindow : Window
     {
         private Server _tcpServer;
-
+        private Client client;
+        private string ip;
         public MainWindow()
         {
             InitializeComponent();
-            _tcpServer = new Server(30000);
-            _tcpServer.Accept();
-            Console.WriteLine("Accept()");
-            _tcpServer.OnReceiveEvent += (message, tcpClient) =>
-            {
-                textBox.Text += $"From [{tcpClient.Client.RemoteEndPoint}]\n\t=> : {message}\n";
-                _tcpServer.Receive();
-            };
-            _tcpServer.OnConnectEvent += client =>
-            {
-                textBox.Text += $"Connected to [{client.Client.RemoteEndPoint}] (TCP)\n";
-                _tcpServer.Receive();
-            };
-            textBox.Text += "Start TCP Receive...\n";
-            _tcpServer.Receive();
-           
-            }
+        }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-         
+
         }
 
         private void TextBox1_TextChanged(object sender, TextChangedEventArgs e)
@@ -60,28 +45,61 @@ namespace TCPConnectApp
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-     
+
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
-            var ClientWindow = new ClientWindow();
-            ClientWindow.Show();
+            var MainWindowInstance = new MainWindow();
+            MainWindowInstance.Show();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void OnServerButton_1(object sender, RoutedEventArgs e)
         {
+           
      
+          
         }
 
         private void TextBox1_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void Button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            var text = textBox1.Text;
+            Console.WriteLine(text);
+            client.Send("", 30000, text);
+            textBox1.Text = "";
+        }
+
+        private void TextBox2_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ServerWindow swindow = new ServerWindow();
+            swindow.Show();
+        }
+
+        private void TextBox1_TextChanged_2(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+       
     }
 }

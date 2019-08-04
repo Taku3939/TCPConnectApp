@@ -6,16 +6,21 @@
         xmlns:local="clr-namespace:TCPConnectApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid HorizontalAlignment="Left" Width="792">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="37*"/>
             <ColumnDefinition Width="227*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="419" Margin="340,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="341" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
-        <Button x:Name="button2" Content="client inatance" HorizontalAlignment="Left" VerticalAlignment="Top" Width="218" Height="33" Click="Button2_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="Serch" HorizontalAlignment="Left" Margin="107,0,0,0" VerticalAlignment="Top" Width="233" Height="33" Click="Button_Click_1" Grid.Column="1"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="275" Width="446" Margin="0,41,0,0" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="283" Margin="0,33,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="451" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="192,111,0,-62" TextWrapping="Wrap" Width="341" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+        <Button x:Name="button2" Content="client inatance" HorizontalAlignment="Left" VerticalAlignment="Top" Width="380" Height="33" Click="Button2_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Severたてる" Margin="269,0,0,0" VerticalAlignment="Top" Height="33" Click="Button_Click_1" Grid.Column="1"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="49" Margin="340,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Grid.Column="1" TextChanged="TextBox1_TextChanged_2"/>
+        <Button x:Name="button1" Content="Send" Grid.Column="1" HorizontalAlignment="Left" Margin="561,370,0,0" VerticalAlignment="Top" Width="120" Height="49" Click="Button1_Click_1"/>
+        <TextBox x:Name="iptext" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="69,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" TextChanged="TextBox2_TextChanged_1"/>
+        <Button x:Name="button3" Grid.ColumnSpan="2" Content="connect" HorizontalAlignment="Left" Margin="83,88,0,0" VerticalAlignment="Top" Width="75" Click="Button3_Click"/>
+        <Button x:Name="button4" Content="open" HorizontalAlignment="Left" Margin="83,130,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox3" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="69,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
+        <Button x:Name="ListenerButton" Grid.ColumnSpan="2" Content="Listen" HorizontalAlignment="Left" Margin="42,53,0,0" VerticalAlignment="Top" Width="75" Click="Button5_Click"/>
 
     </Grid>
 </Window>

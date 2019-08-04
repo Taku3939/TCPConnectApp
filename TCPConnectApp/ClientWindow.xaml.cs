@@ -21,23 +21,19 @@ namespace TCPConnectApp
     /// </summary>
     public partial class ClientWindow : Window
     {
-        private Client client;
+       
         public ClientWindow()
         {
             InitializeComponent();
-            client = new Client();
-            
+          
+
             //  client.OnConnectEvent += client => { textbox.Text += $"Connected to [] (TCP)\n"; };
 
-            if (!client.Connected) { client.Connect("localhost", 30000);
-            } }
+        }
 
         private void SendButton_Click(object sender, RoutedEventArgs e)
-        {
-            var text = textbox.Text;
-            Console.WriteLine(text);
-            client.Send(text);
-            textbox.Text = "";
+        {   
+          
         }
 
         private void TextBox(object sender, TextChangedEventArgs e)
@@ -53,6 +49,20 @@ namespace TCPConnectApp
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void TextBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            ip = iptext.Text;
+            if (!client.Connected)
+            {
+                client.Connect(ip, 30000);
+            }
         }
     }
 }
